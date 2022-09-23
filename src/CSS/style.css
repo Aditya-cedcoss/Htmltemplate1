@@ -1,16 +1,20 @@
+/* universal */
 *{
     margin: 1px;
     padding: 0;
     font-family: sans-serif;
 }
+/* variable defined */
 :root{
     --grey-background:#CCCCCC;
     --heading-color:#003A9D;
 }
+/* header */
 .site-heading{
     background-color: var(--grey-background);
     padding: 20px;
 }
+/* navbar */
 .navbar{
     list-style-type: none;
     text-decoration: none;
@@ -38,18 +42,24 @@
 .navbar>li:active,.navbar>li:last-child{
     background-color: #008C22;
 }
+/* content css */
 .container{
     display: flex;
     margin: 0;
     padding: 0;
 }
+/* right content div */
 .page-heading{
     padding: 30px;
     width: 75%;
 }
+.page-heading>p{
+    text-align: left;
+}
 .page-heading>h1{
     color: var(--heading-color);
 }
+/* left content div */
 .aside-heading{
     margin-top: 0;
     width: 25%;
@@ -60,6 +70,7 @@
 .aside-heading>h2{
     color: var(--heading-color);
 }
+/* footer  */
 #copyright{
     height: 20px;
     width: 20px;
